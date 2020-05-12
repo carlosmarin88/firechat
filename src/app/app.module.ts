@@ -13,12 +13,14 @@ import { FormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { ChatComponent } from './components/chat/chat.component';
 import { ChatService } from './services/chat.service';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

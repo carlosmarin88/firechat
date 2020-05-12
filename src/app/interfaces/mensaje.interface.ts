@@ -6,5 +6,5 @@ export interface Mensaje {
     mensaje: string;
     // el signo de pregunta lo marca como opcional
     fecha?: number;
-    uuid?: string;
+    uid?: string;
 }
