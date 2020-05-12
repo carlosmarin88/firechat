@@ -11,9 +11,10 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'firechat';
 
-  items: Observable<any[]>;
+  chats: Observable<any[]>;
 
   constructor(firestore: AngularFirestore){
-    this.items = firestore.collection('items').valueChanges();
+    // un observable pendiente de todos los cambios en cloud firstore realtime
+    this.chats = firestore.collection('chats').valueChanges();
   }
 }
